@@ -1,0 +1,181 @@
+ion-toolbar{
+    height: 13vh;
+}
+
+ion-toolbar .toolbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ion-toolbar .toolbar img{
+    width: 20vw;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30% ;
+    margin-left:.5rem;
+
+}
+
+ion-toolbar .toolbar ion-title{
+    font-size: 4.5vw;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Gugi';
+    // padding-right: 1rem;
+
+}
+
+span{
+    color:var(--ion-color-space);
+}
+
+ion-toggle{
+    float: right;
+    font-size: 5vw;
+    margin-top:5vh;
+    margin-right: 3vh;
+}
+
+.img{
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+        z-index: -9;
+}
+}
+h1{
+    margin-left: 5vw;
+    font-style: italic;
+}
+
+h1:first-of-type{
+    font-family: .5rem;
+    margin-top:4vh;
+}
+
+ion-col>div{
+    height: 10vh;
+    border-radius: 10%;
+}
+ion-col>div>h3{
+    float: right;
+    padding-right: 3vh;
+    margin-top: 2.8vh;
+    font-style: italic;
+    font-weight: 600;
+}
+.imgBox{
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    h3{
+        color:var(--ion-color-tlight);
+    }
+   
+}
+h2{
+    color:var(--ion-color-tlight);
+}
+
+// #drill>ion-col:first-child>div:first-child{
+// //    background-color: aqua;
+//      background-image: url('/assets/music/blurry-gradient-haikei.png');
+//      background-repeat: no-repeat;
+//      background-position: center;
+//      background-size: 20vh;
+
+// }
+
+
+
+// #drill>ion-col:last-child>div:first-child{
+//     background-image: url('/assets/music/low-poly-grid-haikei.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 20vh;
+
+// }
+// #pop>ion-col:last-child>div:first-child{
+//     background-image: url('/assets/music/polygon-scatter-haikei.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 20vh;
+
+// }
+
+// #pop>ion-col:first-child>div:first-child{
+//     background-image: url('/assets/music/stacked-steps-haikei.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 20vh;
+
+// }
+
+// #folk>ion-col:last-child>div:first-child{
+//     background-image: url('/assets/music/symbol-scatter-haikei.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 20vh;
+
+// }
+
+// #folk>ion-col:first-child>div:first-child{
+//     background-image: url('/assets/music/stacked-peaks-haikei.svg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 20vh;
+
+// }
+
+#mu1{
+    background-image: url('/assets/music/Drug time.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vh;
+}
+
+#mu2{
+    background-image: url('/assets/music/download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vh;
+}
+
+#mu3{
+    background-image: url('/assets/music/logo-Musique-Rolling-Stone.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vh;
+}
+
+ion-slide>div{
+    height: 40vh;
+    display: block;
+}
+
+ion-slide>div>h2{
+    margin-top: 25vh;
+}
+
+
+ion-slide>div>ion-icon{
+    color:var(--ion-color-space);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -1.5vh;
+    
+}

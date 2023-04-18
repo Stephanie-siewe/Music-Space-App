@@ -1,0 +1,36 @@
+[
+    { "id": 1,
+      "name": "bole",
+      "image":"/assets/music/blurry-gradient-haikei.png"
+      },
+    
+    {
+        "id":2,
+        "name":"rnb",
+        "image":"/assets/music/low-poly-grid-haikei.png"
+    },
+
+    {
+        "id":3,
+        "name":"afro_urbain",
+        "image":"/assets/music/polygon-scatter-haikei.png"
+    },
+
+
+    {
+        "id":4,
+        "name":"bikutsi",
+        "image":"/assets/music/stacked-steps-haikei.png"
+    },
+
+    {
+        "id":5,
+        "name":"benskin",
+        "image":"/assets/music/symbol-scatter-haikei.png"
+    }
+
+  
+    
+
+
+    ]

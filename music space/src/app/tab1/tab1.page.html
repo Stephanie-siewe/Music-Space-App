@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div class="toolbar">
+      <img src="assets/music/logo-musique-space.jpg">
+    <ion-title>
+      Music <span>Space</span>
+    </ion-title>
+    <!-- <ion-icon (click)="changeTheme()"name="moon-outline"></ion-icon> -->
+    <ion-toggle (ionChange)="changeTheme($event)" color="medium"></ion-toggle>
+  </div>
+  </ion-toolbar>
+  <!-- <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="search" mode="ios"></ion-searchbar> -->
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h1> Welcome in Music Space</h1>
+  <img src="/assets/music/Listening happy music-bro.svg">
+  <div class="img">
+    <img id="img" src="/assets/music/blob-haikei.svg">
+    <h1> Playlist</h1>
+    <ion-grid>
+      
+      <ion-row>
+        <ion-col size="6"*ngFor="let item of genres" (click)="listmusic(item)" >
+          <div class="imgBox">
+            <img [src]=" item.image">
+            <h3>{{item.name}}</h3>
+            
+            
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+
+  </div>
+
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div class="toolbar">
+     
+      <img  src="assets/music/logo-musique-space.jpg">
+      
+    <ion-title>
+      Music <span>Space</span>
+    </ion-title>
+   
+    </div>
+  </ion-toolbar>
+  <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="search in a playlist" mode="ios" (ionChange)="handleChange($event)" debounce="2000"></ion-searchbar>
+  
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div class="imgBox1"> 
+    <img id="play" src="assets/music/Punk Radio _ Printed Tee Design.jpg" *ngIf="numb==false">
+    <img id="play" [src]="genre.image" *ngIf="numb==true">
+  </div>
+  <!-- <div> <ion-button><ion-icon name="add"></ion-icon></ion-button></div> -->
+
+   <ion-grid> 
+    <ion-row>
+      <ion-col size="6"*ngFor="let item of genres" (click)="listmusic(item)" >
+        <div class="imgBox">
+          <img [src]=" item.image">
+          <h3>{{item.name}}</h3>
+          
+          
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list *ngIf="numb==true"> 
+    <ion-item *ngFor="let item of results">
+      <div style="display: flex;">
+        <ion-label (click)="play(item)">{{item.name}} </ion-label>
+       
+        <!-- <ion-button class="icon" fill="clear" slot="end">
+          <ion-icon  [name]=icon id="like"></ion-icon>
+        </ion-button> -->
+      </div>
+      
+      
+    </ion-item>
+   
+  </ion-list>
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+</ion-content>

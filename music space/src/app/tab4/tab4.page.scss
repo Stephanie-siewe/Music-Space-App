@@ -1,0 +1,74 @@
+ion-toolbar{
+    height: 13vh;
+}
+
+ion-toolbar .toolbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ion-toolbar .toolbar img{
+    width: 20vw;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30% ;
+    margin-left:.5rem;
+
+}
+
+ion-toolbar .toolbar ion-title{
+    font-size: 4.5vw;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Gugi';
+    // padding-right: 1rem;
+
+}
+
+.toolbar ion-icon{
+    float: right;
+    font-size: 5vw;
+    margin-top:5vh;
+    margin-right: 3vh;
+}
+
+span{
+    color:var(--ion-color-space);
+}
+
+ion-content>div:first-of-type>img{
+    // background-image: url('/assets/music/logo-musique-space.jpg');
+    // width: 100%;
+    // height: 100%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 50vh;
+    width: 90%;
+    margin-top: 2vh;
+    margin-bottom:1vh;
+    margin-left: 2.5vh;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30% ;
+
+   
+}
+h1{
+    font-family: 'Gugi';
+}
+
+h1,h2,p{
+   
+    text-align: center;
+}
+
+
+p{
+    margin-top:4vh;
+    margin-left: 1rem;
+    margin-right:1rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+

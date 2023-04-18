@@ -1,0 +1,73 @@
+ion-toolbar{
+    height: 13vh;
+}
+
+ion-toolbar .toolbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ion-toolbar .toolbar img{
+    width: 20vw;
+    margin-top: 1vh;
+    margin-bottom:1vh;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30% ;
+    margin-left:.5rem;
+
+}
+
+ion-toolbar .toolbar ion-title{
+    font-size: 4.5vw;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Gugi';
+    // padding-right: 1rem;
+
+}
+span{
+    color:var(--ion-color-space);
+}
+
+ion-icon{
+    float: right;
+    font-size: 5vw;
+    margin-top:5vh;
+    margin-right: 3vh;
+}
+
+
+ion-content>div:first-of-type{
+    background-image: url('/assets/music/blob.png');
+    background-repeat: no-repeat;
+    background-position:top -25px right -60px;
+    background-size: 45vh;
+    background-attachment:fixed;
+    height: 100%;
+     margin-top:-2rem;
+    // position:fixed
+
+}
+h1{
+    margin-left: 5vw;
+    padding-top:20vh;
+}
+ion-list{
+    margin-top:4vh;
+    padding-bottom: 8vh;
+}
+
+ion-list>div{
+    display:flex;
+    justify-content: space-around;
+}
+
+ion-item{
+    height: 5vh;
+    border-bottom: 2px solid var(--ion-color-space);
+}
+ion-item>ion-label{
+font-size: 1rem;
+}
+

@@ -1,0 +1,7 @@
+{
+  "name": "Music Space",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

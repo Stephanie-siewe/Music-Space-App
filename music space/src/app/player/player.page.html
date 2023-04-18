@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="green"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="play">
+    <img src="assets/music/Drug time.jpg">
+  </div>
+
+  <div>
+    <!-- <h1>{{music.name}}</h1> -->
+    <h2>{{music.name}}</h2>
+    <div  class="icon">
+      <ion-icon (click)="doloop()"name="infinite"></ion-icon>
+      <ion-icon [name]=likeIcon  id="like"></ion-icon>
+    </div>
+  </div>
+   <div>
+    <ion-range  min="0" [max]="audioDuration" [(ngModel)]="currentPosition">
+    
+    <ion-button slot="start" fill="clear" >{{min}}</ion-button>
+    <ion-button slot="end" fill="clear">{{max}}</ion-button>
+    </ion-range>
+  
+    <div  class="icon">
+      <ion-icon name="play-skip-back" (click)="previousmusic(music)"></ion-icon>
+      <ion-icon [name]="playIcon" (click) ="playPause()" id="play"></ion-icon>
+      <ion-icon name="play-skip-forward" (click)="nextmusic(music)"></ion-icon>
+    </div>
+   </div>
+
+  <div>
+    <ion-range [min]="0" [max]="10" [value]="5" [pin]="true" [ticks]="true" [snaps]="true" (ionChange)="changevolume($event)">
+      <ion-icon slot='start' name="volume-off"></ion-icon>
+      <ion-icon slot='end' name="volume-high"></ion-icon>
+      
+    </ion-range>
+    
+  </div>
+
+</ion-content>
+

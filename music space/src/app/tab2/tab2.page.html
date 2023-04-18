@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div class="toolbar">
+      <img src="assets/music/logo-musique-space.jpg">
+    <ion-title>
+      Music <span>Space</span>
+    </ion-title>
+   
+    </div>
+  </ion-toolbar>
+  <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="search" mode="ios" (ionChange)="handleChange($event)" debounce="2000"></ion-searchbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <div>
+
+  <h1> Musics </h1>
+    <ion-list>
+      <ion-item *ngFor="let item of results">
+        <div>
+          <ion-label (click)="play(item)">{{item.name}} </ion-label>
+          <!-- <ion-icon [name]=icon id="like"></ion-icon> -->
+          <!-- <ion-button fill="clear" slot="end"></ion-button> -->
+        </div>
+        
+        
+      </ion-item>
+     
+    </ion-list>
+    
+  </div>
+
+  <hr>
+ 
+
+
+  </ion-content>
+
